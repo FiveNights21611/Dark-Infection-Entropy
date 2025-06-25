@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dark_infection:raw_void_steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "dark_infection:raw_void_steel"
+  }
+}

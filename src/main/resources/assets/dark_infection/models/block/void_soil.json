@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up": "dark_infection:block/void_soil_top",
+    "down": "dark_infection:block/void_dirt",
+    "north": "dark_infection:block/void_soil_side",
+    "south": "dark_infection:block/void_soil_side",
+    "east": "dark_infection:block/void_soil_side",
+    "west": "dark_infection:block/void_soil_side",
+    "particle": "dark_infection:block/void_soil_top"
+  }
+}
