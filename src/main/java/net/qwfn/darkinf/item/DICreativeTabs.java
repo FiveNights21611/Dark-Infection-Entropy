@@ -23,6 +23,7 @@ public class DICreativeTabs {
                         pOutput.accept(DItems.void_steel_ingot.get());
                         pOutput.accept(DItems.raw_void_steel.get());
                         pOutput.accept(DItems.void_gem.get());
+                        pOutput.accept(DItems.dark_orb.get());
                         pOutput.accept(DIBlocks.void_steel_block.get());
                         pOutput.accept(DIBlocks.raw_void_steel_block.get());
                         pOutput.accept(DIBlocks.void_soil.get());
@@ -32,6 +33,7 @@ public class DICreativeTabs {
                         pOutput.accept(DIBlocks.void_gem_ore.get());
                         pOutput.accept(DIBlocks.void_steel_ore.get());
                         pOutput.accept(DIBlocks.cobbled_void.get());
+
 
                     }).build());
 
