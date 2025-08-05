@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.qwfn.darkinf.DarkInfection;
+import net.qwfn.darkinf.block.custom.VoidRoot;
 import net.qwfn.darkinf.item.DItems;
 
 import java.util.function.Supplier;
@@ -33,9 +34,6 @@ public class DIBlocks {
     public static final DeferredBlock<Block> void_stone = registerBlock("void_stone",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-    public static final DeferredBlock<Block> the_anomaly = registerBlock("the_anomaly",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(32767f).requiresCorrectToolForDrops().sound(SoundType.SCULK)));
     public static final DeferredBlock<Block> void_steel_ore = registerBlock("void_steel_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
@@ -45,6 +43,8 @@ public class DIBlocks {
     public static final DeferredBlock<Block> cobbled_void = registerBlock("cobbled_void",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> void_root = registerBlock("void_root",
+    () -> new VoidRoot(BlockBehaviour.Properties.of().strength(32767f).randomTicks()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
@@ -60,4 +60,6 @@ public class DIBlocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
+
+
 }

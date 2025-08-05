@@ -17,7 +17,7 @@ public class DICreativeTabs {
 
     public static final Supplier<CreativeModeTab> infected_blocks_n_items =
             CREATIVE_MODE_tabs.register("infected_blocks_n_items",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(DIBlocks.the_anomaly.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(DIBlocks.void_root.get()))
                     .title(Component.translatable("creativetab.dark_infection.infected_blocks_n_items"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(DItems.void_steel_ingot.get());
@@ -29,10 +29,10 @@ public class DICreativeTabs {
                         pOutput.accept(DIBlocks.void_soil.get());
                         pOutput.accept(DIBlocks.void_dirt.get());
                         pOutput.accept(DIBlocks.void_stone.get());
-                        pOutput.accept(DIBlocks.the_anomaly.get());
                         pOutput.accept(DIBlocks.void_gem_ore.get());
                         pOutput.accept(DIBlocks.void_steel_ore.get());
                         pOutput.accept(DIBlocks.cobbled_void.get());
+                        pOutput.accept(DIBlocks.void_root.get());
 
 
                     }).build());

@@ -18,7 +18,7 @@ public class DarkOrb extends Item {
 
         Level level = context.getLevel();
         Block ClickedBlock = level.getBlockState(context.getClickedPos()).getBlock();
-       block_infection.radius_infecting(20, 10, 4,context.getClickedPos(),context);
+       block_infection.radius_infecting(20, 10, 4,context.getClickedPos(),level);
 
 
         return super.useOn(context);

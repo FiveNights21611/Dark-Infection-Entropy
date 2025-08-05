@@ -17,6 +17,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.qwfn.darkinf.block.DIBlocks;
+import net.qwfn.darkinf.entity.DIBlockEntitys;
 import net.qwfn.darkinf.item.DICreativeTabs;
 import net.qwfn.darkinf.item.DItems;
 
@@ -34,6 +35,7 @@ public class DarkInfection
 
         DItems.register(modEventBus);
         DIBlocks.register(modEventBus);
+        DIBlockEntitys.register((modEventBus));
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
